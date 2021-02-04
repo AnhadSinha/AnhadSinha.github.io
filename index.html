@@ -27,6 +27,9 @@
 	}
 	.footer{
 		background-color: blue;
+		animation-name: animations1;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
 
 	}
 	h1{
@@ -55,6 +58,20 @@
 		text-align: center;
 
 	}
+	.gallery-items:hover{
+		transform: rotate(10deg);
+	}
+	.gallery-items{
+		transition: transform 1s ease 1s;
+	}
+	@keyframes animations1{
+		0% {background-color: red;}
+		20% {background-color: orange;}
+		40% {background-color: yellow;}
+		60% {background-color: green;}
+		80% {background-color: blue;}
+		100% {background-color: purple;}
+	}
 
 
 
@@ -68,7 +85,7 @@
 <body>
 	<div class="Container">
 		<div class="header">
-			<h1>Birds - A picture gallery</h1>z
+			<h1>Birds - A picture gallery</h1>
 		</div>
 		<div class="Quote">
 			<h4>"No one is free, even the birds are chained to the sky." - Bob Dylan</h4>
